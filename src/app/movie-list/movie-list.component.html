@@ -1,0 +1,2 @@
+<h1>Shows</h1>
+<app-movie-show *ngFor="let show of shows" [show]="show" (onClicked)="gotoDetail($event)"></app-movie-show>

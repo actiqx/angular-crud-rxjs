@@ -1,0 +1,29 @@
+<h1>{{show.name}}</h1>
+<div class="main-detail">
+  <img src="{{show.image ? show.image.medium : ''}}" alt="show.name">
+  <div [innerHTML]="show.summary"></div>
+</div>
+<table class="table">
+  <tbody>
+    <tr>
+      <td>Type</td>
+      <td>{{show.type}}</td>
+    </tr>
+    <tr>
+      <td>Language</td>
+      <td>{{show.language}}</td>
+    </tr>
+    <tr>
+      <td>Genres</td>
+      <td>{{show.genres ? show.genres.join(', ') : ''}}</td>
+    </tr>
+    <tr>
+      <td>Status</td>
+      <td>{{show.status}}</td>
+    </tr>
+    <tr>
+      <td>Runtime</td>
+      <td>{{show.runtime}}</td>
+    </tr>
+  </tbody>
+</table>
